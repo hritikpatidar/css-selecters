@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selecters</title>
+        <style>
+            /*
+                1. element selecter syntex
+                element{
+                     property:velue;
+                 }
+            */
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+
+            /*
+                2. ID selecter syntex
+                element#ID{
+                    property:velue;
+                }
+            */
+            #a1{
+                display: block;
+                width:200px;
+                height: 200px;
+                background-color:green;
+            }
+
+            /*
+                3. class selecter syntex
+                element.class{
+                    property:velue;
+                }
+            */
+            .a1{
+                display: block;
+                width:200px;
+                height: 200px;
+                background-color:blue;
+            }
+
+            /*
+                4. Attribute selecter syntex
+                element[name=velue]{
+                    property:velue;
+                }
+            */
+            a[href="http://www.google.com"]{
+                display: block;
+                width:200px;
+                height:200px;
+                background-color:pink;
+            }
+
+            /*
+                5. universal selecter syntex
+                *{
+                    property:velue;
+                }
+            */
+            *{
+                border:2px solid black;
+            }
+
+            /*
+                6. group/combinational selecter syntex
+                element1,elemet2,element3,element3{
+                    property:velue;
+                }
+            */
+            div,#a1,.a1,a[href="http://www.google.com"]{
+                display:inline-block;
+            }
+
+            /*
+                7.pesudo element selecter syntex
+                element::befor/after{
+                    property:velue;
+                }
+            */
+            h1::after{
+                content: url('https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/05/Test2-1.gif?auto=format&q=60&fit=max&w=930');
+            }
+
+            /*
+                8.pesudo class selecter syntex
+                element::befor/after{
+                    property:velue;
+                }
+            */
+            div#b1:hover{
+                width:300px;
+                height:300px;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div>CSS Element Selecter</div>
+        <span id="a1">CSS ID Selecter. #</span>
+        <span class="a1">CSS class Selecter. #</span>
+        <a href="http://www.google.com">CSS Attribute Selecter</a>
+        <h1>pesudo element selecter ::</h1>
+        <div id="b1">css pesudo class selecter :</div>
+    </body>
+</html>
