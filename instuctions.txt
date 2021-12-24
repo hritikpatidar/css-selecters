@@ -1,0 +1,14 @@
+types of css selectors
+
+1. Element selector => div, a, span.
+2. ID selector      => #idname
+3. Class selector   => .classname
+4. Attribute selector => elementname[name="value"]{
+                          p:v;
+                          }
+5. universal selector  => *
+6. pesudo element selector => ::after/befor
+7. Group / combinational selector => element1,element2,element3 {
+					}
+8. pesudo class selecter  => :hover
+9. decendent selector  =>    space is a decendent selector
